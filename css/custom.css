@@ -1,0 +1,1127 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-body-tertiary {
+    opacity: 0.9;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #ffc107;
+    color: var(--bs-dark);
+}
+
+.btn-warning {
+    border: none;
+}
+
+#logout{
+    width: 220px!important;
+}
+
+.marca {
+    color: white;
+}
+
+.dashboard, #bacuri { 
+    color: var(--bs-body-color);
+}
+
+.navbar-brand {
+    margin-left: 14px;
+}
+
+.italico {
+    cursor: pointer;
+    font-style: italic;
+}
+
+.italico:hover {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.vh-100 {
+    height: 92.6vh!important;
+}
+
+.py-5 {
+    padding-top: 3rem!important;
+}
+
+.topo {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+}
+
+.modal-body {
+    padding-bottom: 0;
+}
+
+.py-5 {
+    padding-bottom: 1rem!important;
+}
+
+.form-control {
+    border: 2px solid #ffc107;
+    width: 200px;
+}
+
+.form-control:focus, .form-control:hover {
+    border: 2px solid #ffc107;
+    box-shadow: rgba(255, 193, 7, 0.35) 0px 5px 20px;
+}
+
+.bloco {
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition: 0.4s;
+}
+
+.bloco:hover {
+    transform:scale(1.1,1.1);
+    -webkit-transform:scale(1.1,1.1);
+    -moz-transform:scale(1.1,1.1);
+}
+
+.bloco:active {
+    transform:scale(1,1);
+    -webkit-transform:scale(1,1);
+    -moz-transform:scale(1,1);
+}
+
+.offcanvas-collapse {
+    background-color: var(--bs-body-bg);
+}
+
+#navbarSideCollapse:active {
+    background-color: transparent;
+}
+
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+    z-index: 1;
+}
+
+.nav-link {
+    color: var(--bs-body-color);
+    border-radius: 10px;
+    padding-left: 15px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.nav-link:hover, .nav-link.show {
+    background-color: #ffc107;
+    color: black!important;
+}
+
+.modal_vendas{
+    font-size: 0.75rem;
+}
+
+.cell_vendas {
+    width: 12%;
+}
+
+.container_inicio, .container_clientes, .container_estoque, .container_produtos, .container_deposito, .container_armazem, .container_relatorios, .container_usuarios, .container_meus_dados, .container_pesquisa {
+    margin-top: 122px;
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+
+.container_dados_cliente, .container_compra {
+    text-align: center;
+    width: 100%;
+    display: none;
+} 
+
+.print, .close, .close_canto, .pagar {
+    border: none!important;
+    background-color: transparent!important;
+    margin-top: 5px;
+}
+
+#btn_add_user {
+    border: none!important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+#selecionar {
+    font-size: 19px;
+    color: white;
+    background-color: #17a673;
+    border-radius: 10px;
+    border: solid black 1px;
+    height: 60px;
+    width: 120px;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+    font-family: Helvetica, Arial, sans-serif;
+    -webkit-transition-duration: 0.4s;
+    transition: 0.4s;
+    font-weight: bold;
+}
+
+#selecionar:hover {
+    color: black;
+    background-color: #aaebd3;
+}
+
+#selecionar:active {
+    transform:scale(1,1);
+    -webkit-transform:scale(1,1);
+    -moz-transform:scale(1,1);
+}
+
+#add {
+    border: none!important;
+    background-color: transparent!important;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#autocomplete {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 25px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    border-radius: 10px;
+    border: none!important;
+    background-color: white!important;
+    color: black;
+    transition: 0.4s;
+    font-size: larger;
+}
+
+.ui-helper-hidden-accessible {
+    display: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.ui-front {
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    border-radius: 10px;
+    z-index: 10000;
+    padding-right: 28px;
+    font-size: 20px;
+}
+
+@keyframes fadeIn {
+     0% { opacity: 0; }
+    100% { opacity: 1; }  
+}
+
+#ui-id-1 {
+  top: -20px!important;
+}
+
+#ui-id-2 {
+  width: 200px!important;
+}
+  
+.add {
+    margin-bottom: 2px;
+}
+
+.fw-bold, #selecionar {
+    display: none;
+}
+
+.img-fluid {
+    max-width: 150px;
+}
+
+.dados {
+    font-size: 15px;
+}
+
+.title_block {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+ /* DivTable.com */
+.divTable {
+	display: table;
+	margin:auto; /* Centraliza sua tabela */
+	margin-bottom: 25px;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+
+.divTableCell, .divTableHead {
+	border: 1px solid #999999;
+	display: table-cell;
+	padding: 3px 5px;
+	height: 38px;
+	vertical-align: middle;
+	width: 5%;
+}
+
+.divTableHead {
+	font-weight: 600;
+}
+
+.divTableHeading_acesso {
+	display: table-header-group;
+}
+
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}
+
+.bg_tabela_top {
+    background-color: rgba(0,0,0,0.25)!important;
+    font-weight: 600;
+    width:20%;
+}
+
+.bg_tabela_top_compras, .bg_tabela_top_fiado, .bg_tabela_top_edit, .bg_tabela_top_id {
+    background-color: rgba(0,0,0,0.25)!important;
+    font-weight: 600;
+    width:5%;
+}
+
+.divTableCell {
+    background-color: var(--bs-body-bg);
+}
+
+.loader {
+    display: none;
+    margin: 100px auto;
+}
+
+#edit_btn, #edit_btn_dados, .edit_btn_user, .edit_btn_dados, .plus_add_user, .plus_add_produto {
+    fill: var(--bs-body-color);
+    transition: 0.4s;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+
+#edit_btn:hover, #edit_btn_dados:hover, .edit_btn_user:hover, .edit_btn_dados:hover, .plus_add_user:hover, .plus_add_produto:hover {
+    transform:scale(1.1,1.1);
+    -webkit-transform:scale(1.1,1.1);
+    -moz-transform:scale(1.1,1.1);
+}
+
+#edit_btn:active, #edit_btn_dados:active, .edit_btn_user:active, .edit_btn_dados:active, .plus_add_user:active {
+    transform:scale(1,1);
+    -webkit-transform:scale(1,1);
+    -moz-transform:scale(1,1);
+}
+
+.img_deposito, .img_produtos {
+    outline: 0px solid transparent;
+    fill: var(--bs-body-color);
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition: 0.4s;
+}
+
+.img_deposito:hover, .img_produtos:hover {
+    transform:scale(1.2,1.2);
+    -webkit-transform:scale(1.2,1.2);
+    -moz-transform:scale(1.2,1.2);
+}
+
+.img_deposito:active, .img_produtos:active {
+    transform:scale(1,1);
+    -webkit-transform:scale(1,1);
+    -moz-transform:scale(1,1);
+}
+
+
+.fieldname, .fieldtel {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.ok, .ok_dados, .ok_user {
+    display: none;
+}
+
+#close {
+    border:1px!important;
+    border-color: #856404;
+    background: transparent;
+    color: #856404;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    height: 100%;
+    padding: 0 10px 10px 10px
+}
+
+#close:hover {
+    color: black;
+}
+
+
+.id_bd_cell, .edit_bd_cell {
+    width: 70px!important;
+}
+
+.nome_bd_cell {
+    width: 50%;
+    padding: 0;
+}
+
+.telefone_bd_cell {
+    width: 50%;
+    padding: 0;
+}
+
+.alert {
+    width: 98%;
+    display: none;
+    text-align: center;
+}
+
+.center_btn_vendas, .center_btn_deposito, .center_btn_produto {
+    display: flex;
+    justify-content: center;
+    border: 0px;
+    width: 100%;
+}
+
+.center_btn {
+    display: flex;
+    justify-content: center;
+    border: 0px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.center_btn_produz_racao {
+    display: flex;
+    justify-content: center;
+    border: 0px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.center_title {
+    display: flex;
+    justify-content: center;
+    border: 0px;
+    width: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+.add_form_user, .add_form_descricao, .add_form_valor_compra, .add_form_valor_venda {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+
+.add_form_email, .select_add_produto_deposito, .add_form_qte_deposito {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    min-width: 130px;
+}
+
+.add_form_senha {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+.select_add_status {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.edit_btn_user, .edit_btn_dados {
+    width: 30px;
+}
+
+.divTable {
+	display: table;
+	margin: auto;
+	width: 98%;
+	padding: 0;
+}
+
+.divTabela, .divTabela_compras_recentes_avista, .divTabela_compras_recentes_fiado {
+	display: table;
+	width: 98%;
+	margin: 0 auto 15px 2%;
+}
+
+
+.plus_add_user, .plus_add_produto {
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.user_session {
+    background-color:#EEE8AA !important;
+    color: #000 !important;
+    fill: #000 !important;
+}
+
+input.fielduser, input.fieldemail, input.fieldsenha, select.fieldstatus, input.fieldnome, input.fieldcpf, input.fieldtelefone {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+
+.dados_user_cell, .dados_senha_cell, .dados_status_cell, .dados_email_cell {
+    padding: 2px 2px;
+}
+
+@media (max-width: 576px) {
+    .sacos {
+        width: 45px;
+    }
+    
+    .racoes_criadas {
+        display: none;
+    }
+    
+    
+    .divTabela_produzir_racao {
+    	display: table;
+    	width: 50%;
+    	margin-bottom: 15px;
+    	margin: auto;
+    }
+    
+    .alert {
+        --bs-alert-padding-x: 0.25rem;
+    }
+    
+    .bg_tabela_top {
+        font-size: 11px;
+    }
+    
+    .title_vendas {
+        font-size: 14px;
+    }
+
+    .dados_user_cell, .dados_senha_cell, .dados_status_cell, .dados_email_cell, .divTableHead  {
+        font-size: 11px;
+    }
+    
+    .dados_user_cell, .dados_senha_cell {
+        width: 50px;
+    }
+    
+    .divTableCell {
+        font-size: x-small;
+    }
+    
+    .id_bd_cell, .edit_bd_cell {
+        width: 5px!important;
+        padding: 0;
+    }
+    
+    .nome_bd_cell {
+        padding: 0;
+        width: 93px;
+    }
+    
+    .telefone_bd_cell {
+        width: 115px;
+        padding: 0;
+    }
+    
+    input#autocomplete {
+        width: 250px;
+    }
+    
+    .encontre, .print, .close_app {
+        display: none;
+    }
+    
+    .divTableCell {
+        background-color: var(--bs-body-bg);
+    }
+    
+    .fieldemail {
+        min-width: 130px;
+    }
+    
+    
+    .form-select {
+        font-size: small!important;
+    }
+    
+    .form-control-total {
+        font-size: small!important;
+        height: 35px!important;
+    }
+    
+    .divTabela_vendas_inserted {
+        margin-left: -17px;
+    }
+    
+    .divTabela_vendas_fiado_inserted {
+        margin-left: -7px;
+    }
+    
+    .cell_data {
+       font-size: 0.64rem;
+    }
+    
+    /* Qte (select/input) responsivo e consistente */
+    #select_qte {
+        display: inline-block;
+        max-width: 100px;
+        margin: 0 auto;
+        min-height: 38px;
+        font-size: large;
+    }
+    
+    input#select_qte {
+        max-height: 30px;
+    }
+        
+}
+
+
+@media (min-width: 576.98px) and (max-width: 991.98px) {
+    .racoes_criadas {
+        display: none;
+    }
+    
+    .sacos {
+        width: 60px;
+    }
+    
+    .divTabela_produzir_racao {
+    	display: table;
+    	width: 50%;
+    	margin-bottom: 15px;
+    	margin: auto;
+    }
+    
+    body {
+        font-size:0.75rem;
+    }
+    
+    .title_vendas {
+        font-size: 16px;
+    }
+    
+    .encontre, .print, .close_app {
+        display: none;
+    }
+    
+    input#autocomplete {
+        width: 350px;
+    }
+    
+    .fieldemail {
+        min-width: 250px;
+    }
+    
+    .form-select {
+        font-size: small!important;
+    }
+    
+    .form-control-total {
+        font-size: small!important;
+        height: 38px!important;
+    }
+    
+    
+    #select_qte {
+        max-width: 100px;
+        margin: 0 auto;
+        min-height: 38px;
+        font-size: large;
+        display: inline-block;
+    }
+    
+    input#select_qte {
+        max-height: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .sacos {
+        width: 80px;
+    }
+    
+    .divTabela_produzir_racao {
+    	display: table;
+    	width: 50%;
+    	margin-bottom: 15px;
+    	margin: auto;
+    }
+    
+    .id_bd_cell, .edit_bd_cell {
+        width: 5px!important;
+        padding: 0;
+    }
+    
+    .title_vendas {
+        font-size: 18px;
+    }
+    
+    .nome_bd_cell {
+        padding: 0;
+        width: 93px;
+    }
+
+    .telefone_bd_cell {
+        width: 115px;
+        padding: 0;
+    }
+    
+    #sair_mobile {
+        display: none;
+    }
+    
+    input#autocomplete {
+        width: 400px;
+    }
+    
+    .form-control-total {
+        font-size: larger!important;
+        height: 45px!important;
+    }
+    
+    /* Qte (select/input) responsivo e consistente */
+    #select_qte {
+        max-width: 100px;
+        margin: 0 auto;
+        min-height: 45px;
+        font-size: large;
+        display: inline-block;
+    }
+
+}
+
+.compras_clientes_bd {
+    background-color: rgba(159,251,160,0.75);
+    color: black;
+    text-shadow: 1px 1px 2px white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.fiado_clientes_bd {
+    background-color: rgba(255,80,80,0.85);
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.div-flex {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0px 0px 30px #000);
+}
+
+
+.container_select {
+    text-align:center;
+    display:inline-block;
+}
+
+.select_products {
+    width: 100%; 
+    margin-top:20px;
+}
+
+.select_produtos_deposito {
+    width: 100%;
+    height: 100%;
+}
+
+.form-select {
+    width: auto!important;
+    display:inline-block;
+    font-size: larger;
+}
+
+.form-control-total {
+    height: 45px;
+    display:inline-block;
+    text-align: center;
+    font-weight: bolder!important;
+
+    width: 80px;
+    padding: 0;
+    font-size: larger;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-image: var(--bs-form-select-bg-img),var(--bs-form-select-bg-icon,none);
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 16px 12px;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-control-total:focus {
+    border-color: #86b7fe;
+    outline: 0px solid transparent;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.form-select-desconto {
+    margin-right: 20px;
+}
+
+.btn_ok, .btn_fiado {
+    border: none!important;
+    background: transparent;
+}
+
+.pop_deposito, .pop_produtos, .pop_armazem {
+    position: fixed;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dados_bd_deposito {
+  font-size: small!important;
+}
+
+.dados_bd_deposito > div {
+  height: auto!important;
+}
+
+.div_select_produtos {
+    display: inline-block;
+}
+
+.dropdown-item {
+    cursor: pointer;
+}
+
+.alert-message {
+    height: 50px;
+}
+
+#compras_recentes_avista {
+    margin-bottom: 5rem!important;
+}
+
+#compras_recentes_fiado {
+    margin-bottom: 1rem!important;
+}
+
+
+#success_cliente_top, #error_cliente_top {
+    margin-top: 60px;
+    text-align: center;
+    width: 100%;
+    display: none;
+    position: fixed;
+    overflow: auto;
+}
+
+#error_racao, #success_racao {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+
+.cell_desc_produto, .cell_data_venda {
+    border: 1px solid #999999;
+    display: table-cell;
+    padding: 3px 5px;
+    height: 38px;
+    vertical-align: middle;
+    width: 12%;
+}
+
+.img_close {
+    width: 25px;
+}
+
+.img_close_racao {
+    width: 25px;
+}
+
+.rel_img_deposito {
+    outline: 0px solid transparent;
+    fill: #80baff;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition: 0.4s;
+}
+
+.rel_img_deposito:hover {
+    transform:scale(1.1,1.1);
+    -webkit-transform:scale(1.1,1.1);
+    -moz-transform:scale(1.1,1.1);
+}
+
+.rel_img_deposito:active {
+    transform:scale(1,1);
+    -webkit-transform:scale(1,1);
+    -moz-transform:scale(1,1);
+}
+
+.rel_img_deposito_excluido {
+    outline: 0px solid transparent;
+    fill: #ff656f;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition: 0.4s;
+}
+
+.rel_img_deposito_excluido:hover {
+    transform:scale(1.1,1.1);
+    -webkit-transform:scale(1.1,1.1);
+    -moz-transform:scale(1.1,1.1);
+}
+
+.rel_img_deposito_excluido:active {
+    transform:scale(1,1);
+    -webkit-transform:scale(1,1);
+    -moz-transform:scale(1,1);
+}
+
+.rel_dados_bd {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 95%;*/
+}
+
+.img_relatorios {
+    width: 50px;
+    margin: 1%;
+}
+
+.divTabela_bd {
+    display: inline-table;
+    font-size: small;
+    margin-bottom: 15px;
+    width: 95%;
+}
+
+.img_armazem {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+#milho_value, #trigo_value, #soja_value, #nucleo_value, #calcario_value, #oleo_value, #acucar_value {
+    color: orange;
+    font-weight: 500;
+    font-size: small;
+}
+
+.gray {
+    color: gray;
+}
+
+#add_produto {
+    outline: 0px solid transparent;
+}
+
+.container_racao {
+    margin-bottom: 20px;
+    padding-right: 5%;
+}
+
+.select_racao {
+    width: 100% !important;
+}
+
+.div_racao_criada {
+    display: none;
+    font-size: small;
+}
+
+
+.dados_bd_armazem {
+    font-size: small;
+}
+
+.x-small {
+    font-size: x-small;
+}
+
+.small {
+    font-size: small;
+}
+
+.icones {
+    margin-left: 12px;
+}
+
+.button_grafico_pdf {
+    text-align: right;
+}
+
+.button_grafico_pdf_rel {
+    text-align: right;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+.btn-sm.margin-left {
+    margin-left: 12px;
+}
+
+@media print {
+  .no-print { display: none; }
+ }
+ 
+#myChart {
+    background-color: aliceblue;
+    margin-bottom: 15px;
+}
+
+.row_total {
+    color: silver;
+}
+
+
+.btn-primary {
+    margin: auto;   
+}
+
+select#select_racao {
+    min-width: max-content;
+}
+
+
+/* melhora leitura de números */
+.qte-gramas {
+  font-variant-numeric: tabular-nums;
+}
+
+/* no desktop, deixa um pouco mais “enxuto” se quiser */
+@media (min-width: 768px) {
+    #select_qte {
+        max-width: 100px;
+        margin: 0 auto;
+        min-height: 45px;
+        font-size: large;
+        display: inline-block;
+    }
+}
+
+div#navbarsBacuri {
+    top: 0px;
+}
+
+/* Oculta colunas R$/m² e R$ no celular */
+  @media (max-width: 991.98px){
+    .hide-mobile { display: none !important; }
+  }
+  
+[class^="hiddenText"] { font-size: 0; }
+[class^="hiddenText"]::before {
+    content: '**********';
+    font-size: initial;
+}
+
+.botao-limpo {
+    background: none;    /* Remove a cor de fundo */
+    border: none;        /* Remove a borda padrão */
+    padding: 0;          /* Remove espaçamento interno */
+    margin: 0;           /* Remove espaçamento externo */
+    font: inherit;       /* Faz o texto herdar a fonte do pai */
+    color: inherit;      /* Faz o texto herdar a cor do pai */
+    cursor: pointer;     /* Mantém o cursor de mãozinha (opcional) */
+    outline: inherit;    /* Remove o contorno de foco (opcional) */
+}
+
+
+
+
+.lista-orcamentos {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.orc-item {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.orc-item:hover {
+  background: lightyellow;
+  color: black;
+}
+
+.orc-info {
+  font-size: 13px;
+}
+
+.orc-acoes {
+  display: flex;
+  gap: 5px;
+}
