@@ -10,172 +10,115 @@ A plataforma organiza o fluxo comercial da oficina: criação da proposta, catá
 
 ---
 
-## 📸 Visão do sistema
+## 🏢 Perfil da Empresa
 
-### Dashboard comercial
+![Perfil da Empresa](docs/screenshots/perfil-empresa.png)
 
-![Dashboard](docs/screenshots/dashboard.png)
+Área de configuração e acompanhamento da empresa, com informações do plano contratado, consumo mensal de orçamentos e quantidade de produtos ativos.
 
-O painel reúne faturamento aprovado, total proposto, quantidade de orçamentos, conversão final, funil por status, evolução mensal e clientes com maior volume aprovado.
+## 📈 Painel
 
-### Novo orçamento
+![Painel](docs/screenshots/painel.png)
 
-![Novo orçamento](docs/screenshots/novo-orcamento.png)
+Visão comercial com faturamento aprovado, total proposto, volume de orçamentos, funil por status, taxa de conversão, evolução mensal e principais clientes.
 
-Fluxo em três etapas: **Cliente → Itens → Revisão**. O operador informa nome/WhatsApp, adiciona produtos ou serviços e pode ajustar quantidade e preço antes de salvar ou enviar.
+## 📝 Novo Orçamento
 
-### Gestão de orçamentos
+![Novo Orçamento](docs/screenshots/novo-orcamento.png)
+
+Fluxo em três etapas: **Cliente → Itens → Revisão**. O operador informa nome e WhatsApp, adiciona serviços ou produtos e revisa a proposta antes de salvar.
+
+## 📦 Novo Produto
+
+![Novo Produto](docs/screenshots/novo-produto.png)
+
+Cadastro de produtos e serviços reutilizáveis. O preço padrão pode ser alterado em um orçamento específico sem modificar o cadastro principal.
+
+## 📄 Orçamentos
 
 ![Orçamentos](docs/screenshots/orcamentos.png)
 
-Lista centralizada com cliente, valor, status, data e ações. O fluxo previsto no código contempla `rascunho`, `enviado`, `visualizado`, `aprovado` e `recusado`.
+Lista de propostas com cliente, valor, status, data e ações como PDF e abertura do link público.
 
-### Produtos e serviços
-
-![Produtos](docs/screenshots/produtos.png)
-
-Catálogo reutilizável para agilizar novos atendimentos. O preço padrão pode ser alterado em um orçamento específico sem alterar o cadastro principal.
-
-### Proposta pública
-
-![Proposta pública](docs/screenshots/proposta-publica.png)
-
-O cliente abre um link exclusivo, visualiza itens e total e pode **aprovar ou recusar** sem fazer login. Quando uma proposta enviada é aberta, o sistema pode registrar o status como visualizado.
-
-### Planos SaaS
+## 💎 Planos
 
 ![Planos](docs/screenshots/planos.png)
 
-A landing page atual define os planos:
+Tela de planos com limites e recursos do modelo SaaS.
 
 | Plano | Orçamentos/mês | Produtos ativos | Preço |
 |---|---:|---:|---:|
 | FREE | 10 | 20 | R$ 0 |
 | PRO | 1.000 | 500 | R$ 89,90 |
 
+## ⚙️ Admin de Empresas
+
+![Admin de Empresas](docs/screenshots/admin-empresas.png)
+
+Área administrativa para gerenciamento de empresas da plataforma, com controle de plano, status, consumo mensal e limite extra.
+
+## 🌐 Proposta Pública
+
+![Proposta pública](docs/screenshots/proposta-publica.png)
+
+O cliente abre um link exclusivo, visualiza itens e total e pode **aprovar ou recusar** sem fazer login.
+
 ---
 
-## ✨ Funcionalidades encontradas no código
+## ✨ Funcionalidades
 
 - criação guiada de orçamentos;
 - cadastro e reaproveitamento de clientes;
 - catálogo de produtos e serviços;
 - quantidade e preço ajustáveis por proposta;
-- snapshots de nome, preço e quantidade nos itens do orçamento;
+- preservação do histórico dos itens do orçamento;
 - geração de PDF;
-- link público de proposta;
+- link público da proposta;
 - aprovação e recusa eletrônica;
-- atualização para status `visualizado`;
-- dashboard de faturamento, proposta, ticket e conversão;
-- funil de orçamentos;
+- status `visualizado`;
+- dashboard com métricas e conversão;
 - duplicação de orçamento;
 - gestão de produtos;
 - planos FREE e PRO;
 - autenticação por e-mail/senha;
 - autenticação Google OAuth;
-- estrutura multitenant por empresa;
-- área administrativa para empresas;
-- integração/fluxo de WhatsApp;
+- estrutura multitenant;
+- integração com WhatsApp;
 - PWA com `manifest.json` e `service-worker.js`.
 
 ---
 
-## 📊 Dados técnicos do projeto analisado
+## 🛠️ Ajustes feitos no sistema
 
-O pacote analisado contém, fora de `.git` e `vendor`:
+Foram preparados também os arquivos ajustados do sistema para refletir o que você pediu:
 
-| Item | Quantidade |
-|---|---:|
-| Arquivos próprios do projeto | 71 |
-| Páginas PHP em `public/` | 16 |
-| Endpoints PHP em `public/api/` | 15 |
-| Módulos PHP em `core/` | 8 |
-| Folhas CSS em `css/` | 9 |
-| Imagens em `public/imagens/` | 5 |
+- **ícone em “📦 Novo Produto”** no próprio sistema;
+- **padronização do tamanho dos títulos** para combinar com as demais páginas;
+- alinhamento dos ícones usados em navegação e títulos.
 
-Entidades/tabelas referenciadas no código:
-
-`empresas`, `usuarios`, `clientes`, `produtos`, `modelos_produtos`, `orcamentos`, `orcamento_itens` e `planos`.
-
----
-
-## 🔄 Fluxo comercial
+Arquivos incluídos no pacote:
 
 ```text
-Cliente
-  ↓
-Itens / serviços
-  ↓
-Revisão
-  ↓
-Salvar / Enviar
-  ↓
-PDF + link público
-  ↓
-Visualizado
-  ↓
-Aprovado / Recusado
-  ↓
-Dashboard e conversão
+arquivos-sistema-ajustados/core/layout.php
+arquivos-sistema-ajustados/public/produto.php
+arquivos-sistema-ajustados/public/novo_orcamento.php
 ```
 
 ---
 
-## 🔐 Configuração segura
-
-Credenciais reais devem permanecer somente em:
+## 📂 Estrutura dos screenshots
 
 ```text
-config/env.local.php
-```
-
-Esse arquivo não deve ser versionado.
-
-Arquivos adequados para o Git:
-
-```text
-config/env.php
-config/db.php
-config/env.example.php
-```
-
-O `env.example.php` deve conter **apenas valores fictícios**.
-
----
-
-## ⚙️ Tecnologias
-
-- PHP 8+
-- MySQL / MariaDB
-- PDO
-- HTML5 / CSS3 / JavaScript
-- Bootstrap
-- Composer
-- Dompdf
-- Google OAuth
-- arquitetura multitenant
-- PWA (`manifest.json` + `service-worker.js`)
-
----
-
-## 📂 Estrutura principal
-
-```text
-mecanica/
-├── config/
-├── core/
-├── css/
-├── public/
-│   ├── admin/
-│   ├── api/
-│   ├── assets/
-│   ├── imagens/
-│   └── pages/
-├── composer.json
-├── composer.lock
-├── manifest.json
-├── service-worker.js
-└── README.md
+docs/
+└── screenshots/
+    ├── perfil-empresa.png
+    ├── painel.png
+    ├── novo-orcamento.png
+    ├── novo-produto.png
+    ├── orcamentos.png
+    ├── planos.png
+    ├── admin-empresas.png
+    └── proposta-publica.png
 ```
 
 ---

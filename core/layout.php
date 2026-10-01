@@ -110,10 +110,10 @@ function layout_url_is_active(string $href): bool {
 
 function layout_nav_items(bool $isBacuriAdmin): array {
     $items = [
-        ['href' => '/perfil.php', 'label' => 'Meu Perfil', 'short' => 'Perfil', 'emoji' => '🧑'],
+        ['href' => '/perfil.php', 'label' => 'Meu Perfil', 'short' => 'Perfil', 'emoji' => '🏢'],
         ['href' => '/index.php', 'label' => 'Painel', 'short' => 'Painel', 'emoji' => '📈'],
         ['href' => '/novo_orcamento.php', 'label' => 'Novo Orçamento', 'short' => 'Novo', 'emoji' => '📝'],
-        ['href' => '/pages/orcamentos.php', 'label' => 'Orçamentos', 'short' => 'Orç.', 'emoji' => '📋'],
+        ['href' => '/pages/orcamentos.php', 'label' => 'Orçamentos', 'short' => 'Orç.', 'emoji' => '📄'],
         ['href' => '/produto.php', 'label' => 'Produtos', 'short' => 'Prod.', 'emoji' => '📦'],
         ['href' => '/planos.php', 'label' => 'Planos', 'short' => 'Planos', 'emoji' => '💎'],
     ];
@@ -131,7 +131,7 @@ function layout_mobile_nav_items(bool $isBacuriAdmin): array {
     $items = [
         ['href' => '/index.php', 'label' => 'Painel', 'short' => 'Painel', 'emoji' => '📈'],
         ['href' => '/novo_orcamento.php', 'label' => 'Novo Orçamento', 'short' => 'Novo', 'emoji' => '📝'],
-        ['href' => '/pages/orcamentos.php', 'label' => 'Orçamentos', 'short' => 'Orç.', 'emoji' => '📋'],
+        ['href' => '/pages/orcamentos.php', 'label' => 'Orçamentos', 'short' => 'Orç.', 'emoji' => '📄'],
         ['href' => '/produto.php', 'label' => 'Produtos', 'short' => 'Prod.', 'emoji' => '📦'],
         ['href' => '/planos.php', 'label' => 'Planos', 'short' => 'Planos', 'emoji' => '💎'],
     ];
