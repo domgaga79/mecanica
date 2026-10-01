@@ -1,9 +1,9 @@
 # ==========================================
 # CREDENCIAIS E CONFIGURAÇÕES LOCAIS
 # ==========================================
-config/db.php
+#config/db.php
 config/env.local.php
-config/env.php
+#config/env.php
 
 .env
 .env.*
