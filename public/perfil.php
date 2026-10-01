@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/../core/auth.php';
 require_once __DIR__ . '/../core/layout.php';
 require_once __DIR__ . '/../config/db.php';
@@ -7,7 +7,7 @@ checkAuth();
 $empresa_id = empresa_id();
 
 if (!$empresa_id) {
-    die('Empresa nÃ£o identificada');
+    die('Empresa não identificada');
 }
 
 // ================= DADOS DA EMPRESA / PLANO =================
@@ -36,10 +36,10 @@ $stmt->execute(['id' => $empresa_id]);
 $empresa = $stmt->fetch(PDO::FETCH_ASSOC);
 
 if (!$empresa) {
-    die('Empresa nÃ£o encontrada');
+    die('Empresa não encontrada');
 }
 
-// ================= USO DO MÃŠS: ORÃ‡AMENTOS =================
+// ================= USO DO MÊS: ORÇAMENTOS =================
 $stmt = $pdo->prepare("
     SELECT COUNT(*)
     FROM orcamentos
@@ -74,7 +74,7 @@ $percentualProdutos = $limiteProdutos > 0
     : 0;
 
 function moneyPerfil($valor) {
-    return ((float)$valor <= 0) ? 'GrÃ¡tis' : 'R$ ' . number_format((float)$valor, 2, ',', '.');
+    return ((float)$valor <= 0) ? 'Grátis' : 'R$ ' . number_format((float)$valor, 2, ',', '.');
 }
 
 layout_header("Perfil da Empresa");
@@ -82,7 +82,7 @@ layout_header("Perfil da Empresa");
 
 <div class="w-full">
     <div class="flex items-center justify-between mb-6">
-        <h2 class="text-xl md:text-2xl font-bold">ðŸ¢ Perfil da Empresa</h2>
+        <h2 class="text-xl md:text-2xl font-bold">🏢 Perfil da Empresa</h2>
         <a href="/index.php" onclick="return voltarCompat(event, '/index.php')" 
             class="text-gray-500 hover:text-black font-semibold whitespace-nowrap">
             &larr; Voltar
@@ -132,7 +132,7 @@ layout_header("Perfil da Empresa");
     <div class="bg-white p-6 rounded-xl shadow-md mb-6">
         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-5">
             <div>
-                <h3 class="text-lg font-bold">ðŸ“Š Uso do Plano</h3>
+                <h3 class="text-lg font-bold">📊 Uso do Plano</h3>
                 <p class="text-sm text-gray-500">
                     Cliente selecionado: <strong><?= htmlspecialchars($empresa['nome'] ?? '') ?></strong>
                 </p>
@@ -146,7 +146,7 @@ layout_header("Perfil da Empresa");
             <div class="border rounded-xl p-4">
                 <div class="flex justify-between items-start mb-2">
                     <div>
-                        <p class="text-sm text-gray-500">OrÃ§amentos usados no mÃªs</p>
+                        <p class="text-sm text-gray-500">Orçamentos usados no mês</p>
                         <strong class="text-xl">
                             <?= $orcamentosMes ?> / <?= $limiteTotalOrcamentos ?>
                         </strong>
@@ -190,7 +190,7 @@ layout_header("Perfil da Empresa");
                 </div>
 
                 <p class="text-xs text-gray-500">
-                    Produtos ativos sÃ£o produtos sem exclusÃ£o lÃ³gica.
+                    Produtos ativos são produtos sem exclusão lógica.
                 </p>
             </div>
         </div>
@@ -198,4 +198,3 @@ layout_header("Perfil da Empresa");
 </div>
 
 <?php layout_footer(); ?>
-

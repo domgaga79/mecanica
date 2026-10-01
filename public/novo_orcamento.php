@@ -1,10 +1,10 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/../core/auth.php';
 require_once __DIR__ . '/../core/layout.php';
 
 checkAuth();
 
-layout_header('Novo OrÃ§amento');
+layout_header('Novo Orçamento');
 ?>
 
 <style>
@@ -17,8 +17,8 @@ layout_header('Novo OrÃ§amento');
         <div class="orc-title" style="width:100%">
             <div class="flex items-start justify-between gap-3">
                 <div>
-                    <h2>ðŸ“ Novo OrÃ§amento</h2>
-                    <p>Preencha em 3 passos simples: cliente, itens e revisÃ£o.</p>
+                    <h2>📝 Novo Orçamento</h2>
+                    <p>Preencha em 3 passos simples: cliente, itens e revisão.</p>
                 </div>
 
                 <a href="/pages/orcamentos.php" onclick="return voltarCompat(event, '/pages/orcamentos.php')" class="text-gray-500 hover:text-black font-semibold whitespace-nowrap text-right">&larr; Voltar</a>
@@ -27,10 +27,10 @@ layout_header('Novo OrÃ§amento');
     </div>
 
     <div class="orc-card">
-        <div class="orc-progress" aria-label="Etapas do orÃ§amento">
+        <div class="orc-progress" aria-label="Etapas do orçamento">
             <div class="orc-step-pill active" data-pill="1"><strong>1</strong><div><span>Cliente</span><small>Nome e WhatsApp</small></div></div>
-            <div class="orc-step-pill" data-pill="2"><strong>2</strong><div><span>Itens</span><small>ServiÃ§os e valores</small></div></div>
-            <div class="orc-step-pill" data-pill="3"><strong>3</strong><div><span>RevisÃ£o</span><small>Conferir e salvar</small></div></div>
+            <div class="orc-step-pill" data-pill="2"><strong>2</strong><div><span>Itens</span><small>Serviços e valores</small></div></div>
+            <div class="orc-step-pill" data-pill="3"><strong>3</strong><div><span>Revisão</span><small>Conferir e salvar</small></div></div>
         </div>
 
         <div class="orc-body">
@@ -39,23 +39,23 @@ layout_header('Novo OrÃ§amento');
             <section class="orc-step active" data-step="1">
                 <div class="orc-section-head">
                     <div>
-                        <h3>Para quem Ã© este orÃ§amento?</h3>
-                        <p>Comece informando o cliente. O WhatsApp serÃ¡ usado para enviar o link do orÃ§amento.</p>
+                        <h3>Para quem é este orçamento?</h3>
+                        <p>Comece informando o cliente. O WhatsApp será usado para enviar o link do orçamento.</p>
                     </div>
                 </div>
 
-                <div class="orc-help">ðŸ’¡ Dica: informe o WhatsApp com DDD. Exemplo: <strong>75999999999</strong>. Use somente nÃºmeros.</div>
+                <div class="orc-help">💡 Dica: informe o WhatsApp com DDD. Exemplo: <strong>75999999999</strong>. Use somente números.</div>
 
                 <div class="orc-grid">
                     <div class="orc-field">
-                        <label for="cliente">Nome do cliente <span class="orc-tooltip" tabindex="0" data-tip="Digite o nome que aparecerÃ¡ no orÃ§amento e no PDF.">?</span></label>
-                        <input id="cliente" type="text" autocomplete="name" placeholder="Ex.: JoÃ£o Silva">
-                        <div class="hint">Esse nome aparecerÃ¡ no orÃ§amento enviado ao cliente.</div>
+                        <label for="cliente">Nome do cliente <span class="orc-tooltip" tabindex="0" data-tip="Digite o nome que aparecerá no orçamento e no PDF.">?</span></label>
+                        <input id="cliente" type="text" autocomplete="name" placeholder="Ex.: João Silva">
+                        <div class="hint">Esse nome aparecerá no orçamento enviado ao cliente.</div>
                     </div>
                     <div class="orc-field">
-                        <label for="whatsapp">WhatsApp <span class="orc-tooltip" tabindex="0" data-tip="SerÃ¡ usado para abrir o WhatsApp com a mensagem pronta. Informe DDD + nÃºmero.">?</span></label>
+                        <label for="whatsapp">WhatsApp <span class="orc-tooltip" tabindex="0" data-tip="Será usado para abrir o WhatsApp com a mensagem pronta. Informe DDD + número.">?</span></label>
                         <input id="whatsapp" type="tel" inputmode="numeric" autocomplete="tel" placeholder="Ex.: 75999999999">
-                        <div class="hint">Somente nÃºmeros, com DDD. Pode salvar sem enviar se preferir.</div>
+                        <div class="hint">Somente números, com DDD. Pode salvar sem enviar se preferir.</div>
                     </div>
                 </div>
 
@@ -68,18 +68,18 @@ layout_header('Novo OrÃ§amento');
             <section class="orc-step" data-step="2">
                 <div class="orc-section-head">
                     <div>
-                        <h3>O que serÃ¡ incluÃ­do?</h3>
-                        <p>Busque um serviÃ§o jÃ¡ cadastrado ou adicione um item manual quando o serviÃ§o ainda nÃ£o existir.</p>
+                        <h3>O que será incluído?</h3>
+                        <p>Busque um serviço já cadastrado ou adicione um item manual quando o serviço ainda não existir.</p>
                     </div>
                 </div>
 
-                <div class="orc-help">ðŸ’¡ Valor <strong>R$ 0,00</strong> Ã© permitido para diagnÃ³stico, cortesia ou item apenas informativo.</div>
+                <div class="orc-help">💡 Valor <strong>R$ 0,00</strong> é permitido para diagnóstico, cortesia ou item apenas informativo.</div>
 
                 <div class="orc-search-wrap">
                     <div class="orc-search-row">
                         <div class="orc-field">
-                            <label for="busca">Buscar produto/serviÃ§o <span class="orc-tooltip" tabindex="0" data-tip="Digite pelo menos 2 letras. VocÃª pode escolher um cadastro existente ou criar um item manual.">?</span></label>
-                            <input id="busca" type="search" autocomplete="off" placeholder="Ex.: Troca de Ã³leo, freio, diagnÃ³stico">
+                            <label for="busca">Buscar produto/serviço <span class="orc-tooltip" tabindex="0" data-tip="Digite pelo menos 2 letras. Você pode escolher um cadastro existente ou criar um item manual.">?</span></label>
+                            <input id="busca" type="search" autocomplete="off" placeholder="Ex.: Troca de óleo, freio, diagnóstico">
                         </div>
                         <button type="button" class="orc-btn orc-btn-light" id="btnItemManual">+ Item manual</button>
                     </div>
@@ -87,16 +87,16 @@ layout_header('Novo OrÃ§amento');
                 </div>
 
                 <div id="itens" class="orc-items"></div>
-                <div id="emptyItens" class="orc-empty">Nenhum item adicionado ainda. Busque um serviÃ§o ou toque em <strong>+ Item manual</strong>.</div>
+                <div id="emptyItens" class="orc-empty">Nenhum item adicionado ainda. Busque um serviço ou toque em <strong>+ Item manual</strong>.</div>
 
                 <div class="orc-total-box">
-                    <span>Total do orÃ§amento</span>
+                    <span>Total do orçamento</span>
                     <strong id="total">R$ 0,00</strong>
                 </div>
 
                 <div class="orc-actions">
                     <button type="button" class="orc-btn orc-btn-light" data-prev="1">Voltar</button>
-                    <button type="button" class="orc-btn orc-btn-blue" data-next="3">Revisar orÃ§amento</button>
+                    <button type="button" class="orc-btn orc-btn-blue" data-next="3">Revisar orçamento</button>
                 </div>
             </section>
 
@@ -104,7 +104,7 @@ layout_header('Novo OrÃ§amento');
                 <div class="orc-section-head">
                     <div>
                         <h3>Revise antes de salvar</h3>
-                        <p>Confira cliente, WhatsApp, itens e total antes de gerar o orÃ§amento.</p>
+                        <p>Confira cliente, WhatsApp, itens e total antes de gerar o orçamento.</p>
                     </div>
                 </div>
 
@@ -126,7 +126,7 @@ layout_header('Novo OrÃ§amento');
                     <strong id="revTotal">R$ 0,00</strong>
                 </div>
 
-                <div class="orc-help" style="margin-top:16px">Ao escolher <strong>Salvar e enviar</strong>, o sistema abrirÃ¡ o PDF e o WhatsApp com a mensagem pronta. Em alguns celulares o navegador pode pedir permissÃ£o para abrir a nova aba.</div>
+                <div class="orc-help" style="margin-top:16px">Ao escolher <strong>Salvar e enviar</strong>, o sistema abrirá o PDF e o WhatsApp com a mensagem pronta. Em alguns celulares o navegador pode pedir permissão para abrir a nova aba.</div>
 
                 <div class="orc-actions">
                     <button type="button" class="orc-btn orc-btn-light" data-prev="2">Voltar para editar</button>
@@ -262,7 +262,7 @@ layout_header('Novo OrÃ§amento');
         }
 
         if (whatsapp !== '' && whatsapp.length < 10) {
-            showAlert('Confira o WhatsApp. Informe DDD + nÃºmero ou deixe vazio para salvar sem envio.', 'erro');
+            showAlert('Confira o WhatsApp. Informe DDD + número ou deixe vazio para salvar sem envio.', 'erro');
             el.whatsapp.focus();
             return false;
         }
@@ -273,7 +273,7 @@ layout_header('Novo OrÃ§amento');
 
     function validarItens(){
         if (itens.length === 0) {
-            showAlert('Adicione pelo menos um item ao orÃ§amento.', 'erro');
+            showAlert('Adicione pelo menos um item ao orçamento.', 'erro');
             el.busca.focus();
             return false;
         }
@@ -288,7 +288,7 @@ layout_header('Novo OrÃ§amento');
                 return false;
             }
             if (Number(itens[i].preco || 0) < 0) {
-                showAlert('O preÃ§o nÃ£o pode ser negativo.', 'erro');
+                showAlert('O preço não pode ser negativo.', 'erro');
                 return false;
             }
         }
@@ -311,7 +311,7 @@ layout_header('Novo OrÃ§amento');
                 '<div class="orc-item-head">' +
                     '<div class="orc-field" style="flex:1;margin:0">' +
                         '<label>Nome do item</label>' +
-                        '<input type="text" class="js-nome" value="' + escapeHtml(item.nome) + '" placeholder="Nome do serviÃ§o/produto">' +
+                        '<input type="text" class="js-nome" value="' + escapeHtml(item.nome) + '" placeholder="Nome do serviço/produto">' +
                     '</div>' +
                     '<button type="button" class="js-remover bg-transparent border-none p-0 m-0 text-lg cursor-pointer" aria-label="Remover item"><img src="imagens/close_red.png" width="20px"></button>' +
                 '</div>' +
@@ -319,13 +319,13 @@ layout_header('Novo OrÃ§amento');
                     '<div>' +
                         '<label style="display:block;font-weight:800;color:#374151;margin-bottom:7px">Quantidade</label>' +
                         '<div class="orc-qty">' +
-                            '<button type="button" class="js-menos">âˆ’</button>' +
+                            '<button type="button" class="js-menos">−</button>' +
                             '<input type="number" min="1" class="js-qtd" value="' + Number(item.qtd || 1) + '">' +
                             '<button type="button" class="js-mais">+</button>' +
                         '</div>' +
                     '</div>' +
                     '<div class="orc-field orc-price" style="margin:0">' +
-                        '<label>PreÃ§o unitÃ¡rio</label>' +
+                        '<label>Preço unitário</label>' +
                         '<input type="text" inputmode="numeric" class="js-preco" value="' + formatarMoeda(item.preco) + '">' +
                     '</div>' +
                     '<div class="orc-subtotal">R$ ' + formatarMoeda(subtotal) + '</div>' +
@@ -342,7 +342,7 @@ layout_header('Novo OrÃ§amento');
 
     function renderReview(){
         el.revCliente.textContent = el.cliente.value.trim() || '-';
-        el.revWhatsapp.textContent = el.whatsapp.value.trim() || 'NÃ£o informado';
+        el.revWhatsapp.textContent = el.whatsapp.value.trim() || 'Não informado';
         el.revItens.innerHTML = '';
 
         itens.forEach(function(item){
@@ -365,7 +365,7 @@ layout_header('Novo OrÃ§amento');
         el.busca.value = '';
         esconderResultados();
         render();
-        toastLocal('Item adicionado. Ajuste quantidade e preÃ§o se necessÃ¡rio.', 'sucesso');
+        toastLocal('Item adicionado. Ajuste quantidade e preço se necessário.', 'sucesso');
     }
 
     function esconderResultados(){
@@ -437,7 +437,7 @@ layout_header('Novo OrÃ§amento');
             var json = await res.json().catch(function(){ return null; });
 
             if (json && json.ok) {
-                toastLocal('OrÃ§amento criado com sucesso.', 'sucesso');
+                toastLocal('Orçamento criado com sucesso.', 'sucesso');
 
                 if (enviarWhatsapp) {
                     if (json.pdf) {
@@ -449,7 +449,7 @@ layout_header('Novo OrÃ§amento');
                     if (json.whatsapp) {
                         window.open(json.whatsapp, '_blank');
                     } else {
-                        toastLocal('OrÃ§amento salvo, mas o link do WhatsApp nÃ£o foi retornado.', 'info');
+                        toastLocal('Orçamento salvo, mas o link do WhatsApp não foi retornado.', 'info');
                     }
                 }
 
@@ -459,9 +459,9 @@ layout_header('Novo OrÃ§amento');
                 return;
             }
 
-            showAlert((json && json.erro) ? json.erro : 'Erro ao salvar orÃ§amento.', 'erro');
+            showAlert((json && json.erro) ? json.erro : 'Erro ao salvar orçamento.', 'erro');
         } catch (e) {
-            showAlert('Erro de conexÃ£o ao salvar orÃ§amento.', 'erro');
+            showAlert('Erro de conexão ao salvar orçamento.', 'erro');
         } finally {
             salvando = false;
             setBotoesSalvar(false);
@@ -565,4 +565,3 @@ layout_header('Novo OrÃ§amento');
 </script>
 
 <?php layout_footer(); ?>
-
